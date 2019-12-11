@@ -1,8 +1,17 @@
 'use strict';
 
 // Complete this algo
-const binarySearch = (array, target) => {
-	
+const binarySearch = (a, t, m = (Math.floor(a.length/2))) => {
+	if (a[m] === t) {return true}
+	if (t < a[m]) {
+		a = a.slice(0, m)
+		return binarySearch(a, t)
+	}
+	if (t > a[m]) {
+		a = a.slice(m + 1)
+		return binarySearch(a, t)
+	}
+	return false
 };
 
 /*
