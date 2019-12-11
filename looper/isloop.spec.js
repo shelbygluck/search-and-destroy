@@ -28,11 +28,11 @@ describe('isLoop function', () => {
 
 	// Feel free to write a few tests of your own! :)
 	it('returns true if linked list contains a loop', () =>{
-		// expect(isLoop(test1)).to.equal(true);
+		expect(isLoop(test1)).to.equal(true);
 		expect(isLoop(test2)).to.equal(true);
 	});
 
 	it('returns false if linked list contains no loop', () =>{
-		// expect(isLoop(test3)).to.equal(false);
+		expect(isLoop(test3)).to.equal(false);
 	});
 });
